@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home Page">
+  <link rel="stylesheet" href="/public/styles/main.css">
+  <link rel="stylesheet" href="/public/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/styles/navbar.css">
+
+  <link rel="shortcut icon" href="/public/img/favicon-32x32.png" type="image/x-icon">
+
+  <title>Home</title>
+</head>
+
+<body style="height: 100vh;">
+  <div class="h-100 d-flex flex-column">
+
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <span class="navbar-brand">
+          <h2>{{displayName}}</h2>
+        </span>
+        <div class="d-flex">
+          <div class="d-flex flex-column me-3">
+            <span class="d-flex justify-content-end text-primary-emphasis">{{email}}</span>
+            <span class="d-flex justify-content-end">{{username}}</span>
+          </div>
+          <form action="/user/logout" method="post" class="p-0">
+            <button type="submit" style="width: 6em;" class="btn btn-dark border-secondary-subtle h-100">
+              <span class="text-center">LOGOUT</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      style='background-image: url("/public/img/nature-01.png"); background-position: center; background-repeat: no-repeat; background-size: cover; flex: 1; color: #4e8c3d80; font-size: 20vw; font-family: "Impact-Bold", monospace; font-weight: bolder; background-attachment: fixed; display: flex; justify-content: center; align-items: center;'>
+
+      WELCOME
+
+  </div>
+
+  </section>
+  </div>
+
+  <script src="/public/lib/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

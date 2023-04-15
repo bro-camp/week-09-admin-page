@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Admin signup success page">
+  <link rel="stylesheet" href="/public/styles/main.css">
+  <link rel="stylesheet" href="/public/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/styles/navbar.css">
+
+  <link rel="shortcut icon" href="/public/img/favicon-32x32.png" type="image/x-icon">
+
+  <title>Admin Signup Successful</title>
+</head>
+
+<body>
+  {{>navbar}}
+
+
+  <section>
+    <div class="container-fluid">
+      <div class="row  d-flex justify-content-center">
+        <div class="col">
+
+          <div class="d-flex justify-content-center mt-3">
+            <h3 class="text-center">Admin Sign up was successful!</h3>
+          </div>
+
+          <div class="d-flex justify-content-center mt-3">
+            <a href="/admin/auth/login" class="link-primary-emphasis text-center">Login to continue</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/public/lib/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

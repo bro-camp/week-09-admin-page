@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="User Login / Signup Page">
+  <link rel="stylesheet" href="/public/styles/main.css">
+  <link rel="stylesheet" href="/public/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/styles/navbar.css">
+
+  <link rel="shortcut icon" href="/public/img/favicon-32x32.png" type="image/x-icon">
+
+  <title>Login / Signup</title>
+</head>
+
+<body>
+  {{>navbar}}
+
+
+  <section>
+    <div class="container-fluid">
+      <div class="row  d-flex justify-content-center">
+        <div class="col" style="max-width: 400px">
+
+          <div class="d-flex justify-content-center mt-4">
+            <a href="/user/auth/login" style="width: 10em;" class="btn btn-dark border-info-subtle">
+              <h5 class="text-center">Login</h5>
+            </a>
+          </div>
+
+          <div class="d-flex justify-content-center mt-4">
+            <a href="/user/auth/signup" style="width: 10em;" class="btn btn-dark border-info-subtle">
+              <h5 class="text-center">Sign Up</h5>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/public/lib/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
