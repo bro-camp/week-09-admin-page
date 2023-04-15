@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="User signup success page">
+  <link rel="stylesheet" href="/public/styles/main.css">
+  <link rel="stylesheet" href="/public/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/styles/navbar.css">
+
+  <link rel="shortcut icon" href="/public/img/favicon-32x32.png" type="image/x-icon">
+
+  <title>Error Not Found</title>
+</head>
+
+<body>
+  {{>navbar}}
+
+
+  <section>
+    <div class="container-sm">
+      <div class="row  d-flex justify-content-center">
+        <div class="col-5">
+
+          <div class="d-flex justify-content-center mt-5 mb-2">
+            <h1 class="text-center"><span style="color: rgb(240, 69, 69)">{{errorType}}</span></h1>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <h4 class="text-center">{{errorMessage}}</h4>
+          </div>
+
+          <div class="d-flex justify-content-center mt-4">
+            <a href="/" style="width: 13em;" class="btn btn-dark border-secondary-subtle">
+              <h5 class="text-center">Go to Homepage</h5>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/public/lib/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

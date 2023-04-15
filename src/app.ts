@@ -76,7 +76,7 @@ const setupApp = (app: Express) => {
 
   app.use((_req, res) => {
     res.status(404);
-    res.render(`${viewsDirPath}/pages/error`, {
+    res.render(`${viewsDirPath}/pages/error-404`, {
       errorType: '404',
       errorMessage: 'Not Found',
     });
